@@ -14,6 +14,8 @@ html {
 $black: #333;
 $white: #fff;
 $pink: pink;
+$blue: blue;
+$hoverButtonGrow: scale(1.1);
 /* Add your variables here ⬇️ */
 
 .big {
@@ -39,4 +41,12 @@ $pink: pink;
   transition: transform 0.3s ease;
 
   /* Add your code here ⬇️ */
+  &-primary {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:hover {
+    transform: $hoverButtonGrow;
+  }
 }
